@@ -122,7 +122,6 @@ class _CustomZoomWidgetState extends State<CustomZoomWidget>
 
   @override
   void initState() {
-    debugPrint('inside the init state &&&&&&&&&&');
     controller = TransformationController();
     animationController = AnimationController(
       vsync: this,
@@ -133,7 +132,6 @@ class _CustomZoomWidgetState extends State<CustomZoomWidget>
       )
       ..addStatusListener(
         (status) {
-          debugPrint("status ----------- ${status}");
           if (status == AnimationStatus.completed && widget.useOverlay) {
             Future.delayed(const Duration(milliseconds: 100), removeOverlay);
           }
@@ -145,7 +143,6 @@ class _CustomZoomWidgetState extends State<CustomZoomWidget>
 
   @override
   void dispose() {
-    debugPrint('inside the dispose  ********');
     controller.dispose();
     animationController.dispose();
 
@@ -189,10 +186,6 @@ class _CustomZoomWidgetState extends State<CustomZoomWidget>
                   .log('two fingers off. Parent widget should unblock scroll');
               widget.twoFingersOff!.call();
               Future.delayed(Duration(milliseconds: 160)).then((value) {
-                debugPrint(
-                    "animation value ======== ${animationController.value}");
-                debugPrint(
-                    "is completed ======== ${animationController.isCompleted}");
                 // if (!animationController.isCompleted) {
                 resetAnimation();
                 removeOverlay();
