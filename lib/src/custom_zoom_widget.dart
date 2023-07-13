@@ -185,7 +185,7 @@ class _CustomZoomWidgetState extends State<CustomZoomWidget>
               CustomZoomLogger()
                   .log('two fingers off. Parent widget should unblock scroll');
               widget.twoFingersOff!.call();
-              Future.delayed(Duration(milliseconds: 160)).then((value) {
+              Future.delayed(const Duration(milliseconds: 160)).then((value) {
                 // if (!animationController.isCompleted) {
                 resetAnimation();
                 removeOverlay();
