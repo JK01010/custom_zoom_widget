@@ -1,6 +1,6 @@
 name: custom_zoom_widget
 description: A custom zoom widget which can be used in a scrollable screen's to properly maintain the zooming of an image.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/JK01010/custom_zoom_widget.git
 
 environment:
