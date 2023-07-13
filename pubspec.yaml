@@ -1,7 +1,7 @@
 name: custom_zoom_widget
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/JK01010/custom_zoom_widget.git
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
