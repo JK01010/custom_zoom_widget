@@ -1,10 +1,10 @@
 name: custom_zoom_widget
 description: A custom zoom widget which can be used in a scrollable screen's to properly maintain the zooming of an image.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/JK01010/custom_zoom_widget.git
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=2.17.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
